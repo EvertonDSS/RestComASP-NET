@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gOTWpX42J9zrdMQU89GRdX+6LgTschHqwtcGxpuz+w7yU7P/tv9lxlUqKf1OJNV7m9xPDeXEJfnCsrfkMlc5Cw==",
+  "dgSpecHash": "IhMLEwwt9KA8QUoDtrRsb8giZptmxwKH03/ezyHU/Nq39lTQ6OdGc67xjmG5lPifLdIPhzYc/Mb3VNGr54fn5Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Everton\\Documents\\RestComASP-NET\\S12_ProductListingToHome.NET6\\GeekShopping\\GeekShopping.IdentityServer\\GeekShopping.IdentityServer.csproj",
+  "projectFilePath": "C:\\Users\\Everton\\Documents\\RestComASP-NET\\S13_AddCart.NET6\\GeekShopping\\GeekShopping.IdentityServer\\GeekShopping.IdentityServer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Everton\\.nuget\\packages\\duende.identityserver\\6.0.4\\duende.identityserver.6.0.4.nupkg.sha512",
     "C:\\Users\\Everton\\.nuget\\packages\\duende.identityserver.aspnetidentity\\6.0.4\\duende.identityserver.aspnetidentity.6.0.4.nupkg.sha512",

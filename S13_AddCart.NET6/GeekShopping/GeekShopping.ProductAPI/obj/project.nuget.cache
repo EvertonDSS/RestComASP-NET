@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HnzZ6+yAzFD2NGZokQk4fL0YkbdwogbhPcsJdIAQMSJZhF+Rox1j2NnKhz267r8QtAOFxvHLii26wj3eU96Kxg==",
+  "dgSpecHash": "O6k7dpgl2OkfVVaF4K//7j43TsiC5UEYVnYcP6auZCCqDWnU2ADAwbF7eCChQdXE76jb+ZK1B3VjTBVns/6W2w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Everton\\Documents\\RestComASP-NET\\S12_ProductListingToHome.NET6\\GeekShopping\\GeekShopping.ProductAPI\\GeekShopping.ProductAPI.csproj",
+  "projectFilePath": "C:\\Users\\Everton\\Documents\\RestComASP-NET\\S13_AddCart.NET6\\GeekShopping\\GeekShopping.ProductAPI\\GeekShopping.ProductAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Everton\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\Everton\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

@@ -44,13 +44,12 @@ namespace GeekShopping.Web.Controllers {
 
             CartViewModel cart = new() {
                 CartHeader = new CartHeaderViewModel {
-                    CouponCode = "(NULL)",
+                    CouponCode = "",
                     UserId = User.Claims.Where(u => u.Type == "sub")?.FirstOrDefault()?.Value
                 }
             };
 
             CartDetailViewModel cartDetail = new CartDetailViewModel() {
-                CartHeader = cart.CartHeader,
                 Count = model.Count,
                 ProductId = model.Id,
                 Product = await _productService.FindProductById(model.Id, token)

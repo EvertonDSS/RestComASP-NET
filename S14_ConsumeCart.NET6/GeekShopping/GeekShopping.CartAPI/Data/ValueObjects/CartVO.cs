@@ -1,11 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 
-namespace GeekShopping.CartAPI.Data.ValueObjects {
-    public class CartVO {
+namespace GeekShopping.CartAPI.Data.ValueObjects
+{
+    public class CartVO
+    {
+      
         public CartHeaderVO CartHeader { get; set; }
+
+        [ValidateNever]
         public IEnumerable<CartDetailVO> CartDetails { get; set; }
     }
 }

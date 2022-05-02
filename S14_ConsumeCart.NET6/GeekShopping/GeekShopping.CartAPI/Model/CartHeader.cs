@@ -8,6 +8,9 @@ using System.Threading.Tasks;
 namespace GeekShopping.CartAPI.Model {
     [Table("cart_header")]
     public class CartHeader : BaseEntity {
+        [Column("id")]
+        public long Id { get; set; }
+
         [Column("user_id")]
         public string UserId {  get; set; }
         

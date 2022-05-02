@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 
 namespace GeekShopping.CartAPI.Model {
     public class Cart {
+       
         public CartHeader CartHeader { get; set; }
+        [ValidateNever]
         public IEnumerable<CartDetail> CartDetails { get; set; }
     }
 }

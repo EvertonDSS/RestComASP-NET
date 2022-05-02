@@ -8,7 +8,10 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 ConfigurationManager configuration = builder.Configuration;
 builder.Services.AddHttpClient<IProductService, ProductService>(c => c.BaseAddress = new Uri(configuration["ServiceUrls:ProductAPI"])); //Se comunica com a API através da URL do Serviço e do nome do Serviço(ProductAPI)
-builder.Services.AddHttpClient<ICartService, CartService>(c => c.BaseAddress = new Uri(configuration["ServiceUrls:CartAPI"])); //Se comunica com a API através da URL do Serviço e do nome do Serviço(ProductAPI)
+
+builder.Services.AddHttpClient<ICouponService, CouponService>(c => c.BaseAddress = new Uri(configuration["ServiceUrls:CouponAPI"]));//Se comunica com a API através da URL do Serviço e do nome do Serviço(ProductAPI)
+
+builder.Services.AddHttpClient<ICartService, CartService>(c => c.BaseAddress = new Uri(configuration["ServiceUrls:CartAPI"])); 
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddAuthentication(options => {

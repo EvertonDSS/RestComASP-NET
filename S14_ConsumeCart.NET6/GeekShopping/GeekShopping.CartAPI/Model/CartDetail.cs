@@ -9,6 +9,8 @@ namespace GeekShopping.CartAPI.Model {
     
     [Table("cart_detail")]
     public class CartDetail : BaseEntity {
+        public long Id { get; set; }
+
         public long CartHeaderId { get; set; }
 
 

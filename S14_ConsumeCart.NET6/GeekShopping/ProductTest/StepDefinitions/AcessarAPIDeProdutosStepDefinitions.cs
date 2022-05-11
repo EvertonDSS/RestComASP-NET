@@ -21,7 +21,7 @@ namespace ProductTest.StepDefinitions
         }
 
         #region token
-        public readonly string token = "eyJhbGciOiJSUzI1NiIsImtpZCI6IjBFM0VBN0E5RTVGMTUzQTA0OTlBQUQ0QzZDNDM3QTc4IiwidHlwIjoiYXQrand0In0.eyJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo0NDM1IiwibmJmIjoxNjUyMjA5MDkzLCJpYXQiOjE2NTIyMDkwOTMsImV4cCI6MTY1MjIxMjY5MywiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNS9yZXNvdXJjZXMiLCJzY29wZSI6WyJvcGVuaWQiLCJwcm9maWxlIiwiZ2Vla19zaG9wcGluZyJdLCJhbXIiOlsicHdkIl0sImNsaWVudF9pZCI6ImdlZWtfc2hvcHBpbmciLCJzdWIiOiI3ZmIwZmIzNS0wZTQ5LTRjODEtYjg1OC1mZGFiZDNkNWYyOTUiLCJhdXRoX3RpbWUiOjE2NTIyMDkwOTIsImlkcCI6ImxvY2FsIiwiZW1haWwiOiJldmVydG9uLWFkbWluQGdtYWlsLmNvbS5iciIsIkFzcE5ldC5JZGVudGl0eS5TZWN1cml0eVN0YW1wIjoiR1BLVlBOMk43RjRQNUI0S1ZHQUZBR01UUFVWUUgyUDMiLCJuYW1lIjoiRXZlcnRvbiBBZG1pbiIsImdpdmVuX25hbWUiOiJFdmVydG9uIiwiZmFtaWx5X25hbWUiOiJBZG1pbiIsInJvbGUiOiJBZG1pbiIsInByZWZlcnJlZF91c2VybmFtZSI6ImV2ZXJ0b24tYWRtaW4iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwicGhvbmVfbnVtYmVyIjoiKzU1ICg0MSkgMTIzNDUtMTIzNCIsInBob25lX251bWJlcl92ZXJpZmllZCI6ZmFsc2UsInNpZCI6IjM0MEE5QUM0QUJGRkJCQzQxQzIzNUQ3MzNGNkNEQkYzIiwianRpIjoiRjY3QzNBQkU2QTNGMTQ2M0Y3RDk4M0NFMjEzNkM1RjQifQ.CgNH6-Bntqkyfru0tMXy-RF1uZwaVN3su_L31ezNgpzLPAbi0I5WmkTPuzU1S2j2o6gnZvyPCd3YPuD39bQOwOCOOPvKKMFBqDYmE_ga4cDfedAY4e-ZewAQIEMwFL9wjWVDlJvdxFhNFXLNaS4_RpvUW-P3kwFXOe1xhkkAK-iAeMRTysltSCqSciGdtMQUYZWR9z3d9hfOwbCvHpyvP5JjzYMlEzc_zdzosOO85CcQxMtzmufXMtDjbjlGVRMFpKUswhSMNVbHm_o3l4gvCN1bPDv3lAmFcQBnJmCOOIj73nYicHht4xgEaJW-3QviMp8RDWrxCkdhNJRkiV7Ctw";
+        public readonly string token = "eyJhbGciOiJSUzI1NiIsImtpZCI6IjBFM0VBN0E5RTVGMTUzQTA0OTlBQUQ0QzZDNDM3QTc4IiwidHlwIjoiYXQrand0In0.eyJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo0NDM1IiwibmJmIjoxNjUyMjcxMjk1LCJpYXQiOjE2NTIyNzEyOTUsImV4cCI6MTY1MjI3NDg5NSwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNS9yZXNvdXJjZXMiLCJzY29wZSI6WyJvcGVuaWQiLCJwcm9maWxlIiwiZ2Vla19zaG9wcGluZyJdLCJhbXIiOlsicHdkIl0sImNsaWVudF9pZCI6ImdlZWtfc2hvcHBpbmciLCJzdWIiOiI4ODcxMDFkYy0xZWIyLTRlOTQtYWMyNi03OTE1YzNmNzE4ZTgiLCJhdXRoX3RpbWUiOjE2NTIyNzEyOTUsImlkcCI6ImxvY2FsIiwiZW1haWwiOiJldmVydG9uLWFkbWluQGdtYWlsLmNvbS5iciIsIkFzcE5ldC5JZGVudGl0eS5TZWN1cml0eVN0YW1wIjoiWjJIWllCMk1FUTY1S0VFV1c2STMzRTVXRVhQTDRWTDIiLCJuYW1lIjoiRXZlcnRvbiBBZG1pbiIsImdpdmVuX25hbWUiOiJFdmVydG9uIiwiZmFtaWx5X25hbWUiOiJBZG1pbiIsInJvbGUiOiJBZG1pbiIsInByZWZlcnJlZF91c2VybmFtZSI6ImV2ZXJ0b24tYWRtaW4iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwicGhvbmVfbnVtYmVyIjoiKzU1ICg0MSkgMTIzNDUtMTIzNCIsInBob25lX251bWJlcl92ZXJpZmllZCI6ZmFsc2UsInNpZCI6IjExRTAwMDQ4OUZCRkE0QURFQUE3MjAwNjc2Qjc0ODkwIiwianRpIjoiNDM2RDFBNjkxRjk4N0Y2RDU0MEE0ODhCQTgyRjZGNzMifQ.nZxWeh1eZMZlzVScD2JPP0Z15qpJquUu6ktru0ySIDgoFGSMU_qoQpgFLdvwjcM7FuL1aXQjNWObx0ZITexL0ADXP0r9p9DKIMt9rhZMJ-0YuFOdjb0lyQ4UCUXIqlYfc_VV1pFEv3icNQDpsETJH4eR8oiMFGvuHDlNqP5PqBaW1Afs1vv_tQPZd4k-j6UuI_YBEjxZ44H0pl1Aux8lv4EnJ2Q7UKP0DWlqQsBWRHN53nc5uGLgv6Q2cIlcDO9d6XtNppEEGO5IrAt9DmRHy5GczB3mE64mJuhNgLFXcy6KO72LdFx6E8D1U4xZTIQ8KAqIUnZdxlK1NaXk5sW2Dg";
         #endregion
         
         [Given(@"que eu acesso a rota '([^']*)'")]
@@ -65,7 +65,8 @@ namespace ProductTest.StepDefinitions
         [Given(@"o produto com o id '([^']*)'")]
         public void GivenOProdutoComOId(string p0)
         {
-            _scenarioContext["Id"] = "2";
+            _scenarioContext["Id"] = "3";
+            string route = (string)_scenarioContext["Route"]; 
         }
 
         [When(@"realizo o metodo '([^']*)' no produto")]
@@ -76,7 +77,7 @@ namespace ProductTest.StepDefinitions
             string id = (string)_scenarioContext["Id"];
             url += $"{route}/{id}";
             var client = new HttpClient();
-            client.DefaultRequestHeaders.Add("Authorization", $"Bearer {_scenarioContext["Token"]}");
+            client.DefaultRequestHeaders.Add("Authorization", $"Bearer {token}");
             var result = client.GetAsync(url).Result;
             _scenarioContext["Response"] = result.StatusCode;
         }
@@ -110,13 +111,13 @@ namespace ProductTest.StepDefinitions
         {
             _scenarioContext["Method"] = method;
             string route = (string)_scenarioContext["Route"];
-            url += $"{route}";
-            var client = new HttpClient();
-            client.DefaultRequestHeaders.Add("Authorization", $"Bearer {_scenarioContext["Token"]}");
-            var product = (HttpContent?)_scenarioContext["Product"];
+            //url += $"{route}";
+            //var client = new HttpClient();
+            //client.DefaultRequestHeaders.Add("Authorization", $"Bearer {_scenarioContext["Token"]}");
+            //var product = (HttpContent?)_scenarioContext["Product"];
 
-            var result = client.PostAsync(url, product);
-            _scenarioContext["Response"] = result.Result.StatusCode;
+            //var result = client.PostAsync(url, product);
+            //_scenarioContext["Response"] = result.Result.StatusCode;
         }
 
         

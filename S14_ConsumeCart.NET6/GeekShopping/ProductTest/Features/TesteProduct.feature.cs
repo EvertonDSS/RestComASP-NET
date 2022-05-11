@@ -20,22 +20,22 @@ namespace ProductTest.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("Acessar API de produtos")]
-    public partial class AcessarAPIDeProdutosFeature
+    [NUnit.Framework.DescriptionAttribute("Acessar API de produtos e obter o Status Code")]
+    public partial class AcessarAPIDeProdutosEObterOStatusCodeFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
         private string[] _featureTags = ((string[])(null));
         
-#line 1 "ProductAPI.Test.feature"
+#line 1 "TesteProduct.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("pt-br"), "Features", "Acessar API de produtos", null, ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("pt-br"), "Features", "Acessar API de produtos e obter o Status Code", null, ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -82,7 +82,7 @@ namespace ProductTest.Features
                     "GetAllProducts"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Acessar todos os produtos sem autenticação", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 6
+#line 7
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -102,29 +102,29 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 7
- testRunner.Given("que eu acesso a rota \'/api/v1/products\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
-#line hidden
 #line 8
- testRunner.When("realizo o metodo \'Get\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+ testRunner.Given("que não estou autenticado", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
 #line 9
- testRunner.Then("o statuscode deve ser \'OK\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
+ testRunner.When("executo o metodo Get na URL", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+#line hidden
+#line 10
+ testRunner.Then("o statusCode deve retornar OK", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Acessar um produto pelo id e com autenticação")]
+        [NUnit.Framework.DescriptionAttribute("Acessar um produto pelo id estando autenticado")]
         [NUnit.Framework.CategoryAttribute("GetProductId")]
-        public virtual void AcessarUmProdutoPeloIdEComAutenticacao()
+        public virtual void AcessarUmProdutoPeloIdEstandoAutenticado()
         {
             string[] tagsOfScenario = new string[] {
                     "GetProductId"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Acessar um produto pelo id e com autenticação", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 12
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Acessar um produto pelo id estando autenticado", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 13
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -144,35 +144,35 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 13
- testRunner.Given("estou autenticado", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
-#line hidden
 #line 14
- testRunner.And("estou acessando rota \'/api/v1/products\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+ testRunner.Given("que estou autenticado no sistema", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
 #line 15
- testRunner.And("o produto com o id \'2\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+ testRunner.And("acesso produto com o id \'3\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 16
- testRunner.When("realizo o metodo \'Get\' no produto", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+ testRunner.When("executo o metodo Get na URL", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
 #line 17
- testRunner.Then("o statuscode deve ser \'OK\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
+ testRunner.And("adiciono o id na URL", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+#line hidden
+#line 18
+ testRunner.Then("o statusCode deve retornar OK", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Adicionar um novo produto no sistema")]
+        [NUnit.Framework.DescriptionAttribute("Adicionar um novo produto no sistema estando autenticado")]
         [NUnit.Framework.CategoryAttribute("CreateProduct")]
-        public virtual void AdicionarUmNovoProdutoNoSistema()
+        public virtual void AdicionarUmNovoProdutoNoSistemaEstandoAutenticado()
         {
             string[] tagsOfScenario = new string[] {
                     "CreateProduct"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Adicionar um novo produto no sistema", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 20
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Adicionar um novo produto no sistema estando autenticado", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 21
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -192,32 +192,32 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 21
- testRunner.Given("que estou autenticado", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
-#line hidden
 #line 22
- testRunner.And("quero criar um novo produto", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+ testRunner.Given("que estou autenticado no sistema", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
 #line 23
- testRunner.When("executar o método \'Post\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+ testRunner.And("quero criar um novo product", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 24
- testRunner.Then("o statuscode deve ser \'OK\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
+ testRunner.When("executo o metodo Post na URL", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+#line hidden
+#line 25
+ testRunner.Then("o statusCode deve retornar OK", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Estou autenticado e quero apagar um produto do sistema pelo id")]
+        [NUnit.Framework.DescriptionAttribute("Quero apagar um produto do sistema pelo id estando autenticado")]
         [NUnit.Framework.CategoryAttribute("DeleteProducts")]
-        public virtual void EstouAutenticadoEQueroApagarUmProdutoDoSistemaPeloId()
+        public virtual void QueroApagarUmProdutoDoSistemaPeloIdEstandoAutenticado()
         {
             string[] tagsOfScenario = new string[] {
                     "DeleteProducts"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Estou autenticado e quero apagar um produto do sistema pelo id", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 27
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Quero apagar um produto do sistema pelo id estando autenticado", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 28
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -237,20 +237,62 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 28
- testRunner.Given("que estou autenticado", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
-#line hidden
 #line 29
- testRunner.And("que eu acesso a rota \'/api/v1/products\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+ testRunner.Given("que estou autenticado no sistema", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
 #line 30
- testRunner.And("o produto o id \'56\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+ testRunner.And("acesso produto com o id \'21\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 31
- testRunner.When("executo o metodo \'Delete\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+ testRunner.When("executo o metodo Delete na URL", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
 #line 32
- testRunner.Then("o statuscode deve ser \'OK\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
+ testRunner.Then("o statusCode deve retornar OK", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Quero atualizar um produto do sistema pelo id estando autenticado")]
+        [NUnit.Framework.CategoryAttribute("AtualizarProduct")]
+        public virtual void QueroAtualizarUmProdutoDoSistemaPeloIdEstandoAutenticado()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "AtualizarProduct"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Quero atualizar um produto do sistema pelo id estando autenticado", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 35
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 36
+ testRunner.Given("que estou autenticado no sistema", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
+#line hidden
+#line 37
+ testRunner.And("atualizo um produto existente", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+#line hidden
+#line 38
+ testRunner.When("executo o metodo Put na URL", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+#line hidden
+#line 39
+ testRunner.Then("o statusCode deve retornar OK", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
             }
             this.ScenarioCleanup();

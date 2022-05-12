@@ -21,7 +21,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SpecflowTeste", "SpecflowTe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductTest", "ProductTest\ProductTest.csproj", "{5871B98A-06E2-4A79-99DF-62B50C166080}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CouponTest", "CouponTest\CouponTest.csproj", "{2ABA955B-C109-4A66-ADB2-40BF5F2ACCE3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CouponTest", "CouponTest\CouponTest.csproj", "{2ABA955B-C109-4A66-ADB2-40BF5F2ACCE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CartTest", "CartTest\CartTest.csproj", "{8AC8E675-2F6E-43D6-B9BD-4D08E01E4CDB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{2ABA955B-C109-4A66-ADB2-40BF5F2ACCE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2ABA955B-C109-4A66-ADB2-40BF5F2ACCE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2ABA955B-C109-4A66-ADB2-40BF5F2ACCE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AC8E675-2F6E-43D6-B9BD-4D08E01E4CDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AC8E675-2F6E-43D6-B9BD-4D08E01E4CDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AC8E675-2F6E-43D6-B9BD-4D08E01E4CDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AC8E675-2F6E-43D6-B9BD-4D08E01E4CDB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -69,6 +75,7 @@ Global
 		{A11A10B3-A93A-4383-A1A6-9F87FCBE31F3} = {A754025D-97DD-452D-8152-4156DE7C2F67}
 		{5871B98A-06E2-4A79-99DF-62B50C166080} = {46C37B16-C624-4368-B7B8-EDBA59717188}
 		{2ABA955B-C109-4A66-ADB2-40BF5F2ACCE3} = {46C37B16-C624-4368-B7B8-EDBA59717188}
+		{8AC8E675-2F6E-43D6-B9BD-4D08E01E4CDB} = {46C37B16-C624-4368-B7B8-EDBA59717188}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3540D129-FFA1-4286-AE29-C5A60BAABE14}

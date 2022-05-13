@@ -20,9 +20,9 @@ namespace CouponTest.StepDefinitions
         {
             _scenarioContext = scenarioContext;
         }
-
+        
         #region token
-        public readonly string token = "eyJhbGciOiJSUzI1NiIsImtpZCI6IjBFM0VBN0E5RTVGMTUzQTA0OTlBQUQ0QzZDNDM3QTc4IiwidHlwIjoiYXQrand0In0.eyJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo0NDM1IiwibmJmIjoxNjUyMzcwNjgyLCJpYXQiOjE2NTIzNzA2ODIsImV4cCI6MTY1MjM3NDI4MiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNS9yZXNvdXJjZXMiLCJzY29wZSI6WyJvcGVuaWQiLCJwcm9maWxlIiwiZ2Vla19zaG9wcGluZyJdLCJhbXIiOlsicHdkIl0sImNsaWVudF9pZCI6ImdlZWtfc2hvcHBpbmciLCJzdWIiOiI3ZmIwZmIzNS0wZTQ5LTRjODEtYjg1OC1mZGFiZDNkNWYyOTUiLCJhdXRoX3RpbWUiOjE2NTIzNzA2ODIsImlkcCI6ImxvY2FsIiwiZW1haWwiOiJldmVydG9uLWFkbWluQGdtYWlsLmNvbS5iciIsIkFzcE5ldC5JZGVudGl0eS5TZWN1cml0eVN0YW1wIjoiR1BLVlBOMk43RjRQNUI0S1ZHQUZBR01UUFVWUUgyUDMiLCJuYW1lIjoiRXZlcnRvbiBBZG1pbiIsImdpdmVuX25hbWUiOiJFdmVydG9uIiwiZmFtaWx5X25hbWUiOiJBZG1pbiIsInJvbGUiOiJBZG1pbiIsInByZWZlcnJlZF91c2VybmFtZSI6ImV2ZXJ0b24tYWRtaW4iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwicGhvbmVfbnVtYmVyIjoiKzU1ICg0MSkgMTIzNDUtMTIzNCIsInBob25lX251bWJlcl92ZXJpZmllZCI6ZmFsc2UsInNpZCI6IjM5M0QyQTAyOUZCOEM3NzM1NkE5MkUxOTM3MzZFRTk5IiwianRpIjoiNDQ5RjY5RkFENzFFNzBDQUJGNzE5OEI2NDRDQjVCNTkifQ.JhZorKgdHNFvh63y8YnWh5hFq-BJGzaTUzNjb85HOw7OazjzF5yC1NiUg08xFVl6I9xC2auo_PXFUNLU1L-OD6lGQfqkbnbC0XDnSwiwqvqeHnbJDfIeU3HrR0rtKYgQqhK4sMlKUnSH397pjMMcXtQNj0v0ivYJCXEQueYKTLcTMZ-_UjXsxiPOAlc1IxNiqCQbdOoEOh0Nmcuuxk76Appo2gNJeS3DVIRcNDNxAHqOpbx0fC_KsDzd4NvNkEIkiowh3BdzEY4GOfZ_RqJ-Gjr4Gw7u3L3Q3vTfVBJ5vHc3mnbIZSeGZoxicLinm3dAvSoiKiVx9aQ-s3hWNhYDMQ";
+        string token = "eyJhbGciOiJSUzI1NiIsImtpZCI6IjBFM0VBN0E5RTVGMTUzQTA0OTlBQUQ0QzZDNDM3QTc4IiwidHlwIjoiYXQrand0In0.eyJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo0NDM1IiwibmJmIjoxNjUyNDY1ODEwLCJpYXQiOjE2NTI0NjU4MTAsImV4cCI6MTY1MjQ2OTQxMCwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNS9yZXNvdXJjZXMiLCJzY29wZSI6WyJvcGVuaWQiLCJwcm9maWxlIiwiZ2Vla19zaG9wcGluZyJdLCJhbXIiOlsicHdkIl0sImNsaWVudF9pZCI6ImdlZWtfc2hvcHBpbmciLCJzdWIiOiI4ODcxMDFkYy0xZWIyLTRlOTQtYWMyNi03OTE1YzNmNzE4ZTgiLCJhdXRoX3RpbWUiOjE2NTI0NjUwMjcsImlkcCI6ImxvY2FsIiwiZW1haWwiOiJldmVydG9uLWFkbWluQGdtYWlsLmNvbS5iciIsIkFzcE5ldC5JZGVudGl0eS5TZWN1cml0eVN0YW1wIjoiWjJIWllCMk1FUTY1S0VFV1c2STMzRTVXRVhQTDRWTDIiLCJuYW1lIjoiRXZlcnRvbiBBZG1pbiIsImdpdmVuX25hbWUiOiJFdmVydG9uIiwiZmFtaWx5X25hbWUiOiJBZG1pbiIsInJvbGUiOiJBZG1pbiIsInByZWZlcnJlZF91c2VybmFtZSI6ImV2ZXJ0b24tYWRtaW4iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwicGhvbmVfbnVtYmVyIjoiKzU1ICg0MSkgMTIzNDUtMTIzNCIsInBob25lX251bWJlcl92ZXJpZmllZCI6ZmFsc2UsInNpZCI6IjJDMzRBODA4NjBDMDY3Nzk0RDcyRDFBQkIwRTBGM0E0IiwianRpIjoiMkYwQUU2Mzg4QUM0RjAzQzMzNTVDN0I5QjYxRTgwRDYifQ.f8EE-jOxfx_TFpl9XnnCTA3N6io-2pkKRa357C7QBUPtH-AB4DxAA596HQj3MxiCpZvKkdmckNKjMgPNg0sxpuBqxsqRGJMH15oO-5VRUD5G6g_Ules21BgKs7hdH44eZyYPbjx-vdxAg_5KuW9lUmiNGOMrZQPXEhC7xjV-wDclioAETfJFWSl7hK_vLpwpiK2XEO1h9teno61YS8nWpYnFU5Gc3rEISaphW-rVj3crheJGvnY0a3gvBRmPla0BDWFhfXyHsHqCy303uP-4TULG8U2C741z_rzCgD3GXPaOKKy7mIuPUC2_la24N4jomAt9ujn8mSQs6K24jaWP0Q";
         #endregion
 
         [Given(@"que eu tenho um cupom com status ativo")]
@@ -68,15 +68,12 @@ namespace CouponTest.StepDefinitions
 
             JObject json = JObject.Parse(result);
             var b = json.GetType();
-
-            decimal discountAmount = (decimal)json["discountAmount"];
-            int id = (int)json["id"];
-            string couponCode = (string)json["couponCode"];
+            
             var getCoupon = new Coupon()
             {
-                Id = id,
-                CouponCode = couponCode,
-                DiscountAmount = discountAmount,
+                Id = (int)json["id"],
+                CouponCode = (string)json["couponCode"],
+                DiscountAmount = (decimal)json["discountAmount"],
             };
 
             var dataAsString = JsonSerializer.Serialize(getCoupon);
@@ -101,5 +98,7 @@ namespace CouponTest.StepDefinitions
             
             Assert.AreEqual(dataAsString, response);
         }
+
+
     }
 }

@@ -106,7 +106,7 @@ this.ScenarioInitialize(scenarioInfo);
 testRunner.Given("que acesso a rota \'/api/v1/Cart/find-cart\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
 #line 7
-testRunner.And("o id de usuario \'7fb0fb35-0e49-4c81-b858-fdabd3d5f295\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+testRunner.And("o id de usuario \'887101dc-1eb2-4e94-ac26-7915c3f718e8\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 8
 testRunner.When("executar o metodo get", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
@@ -151,12 +151,60 @@ this.ScenarioInitialize(scenarioInfo);
 testRunner.Given("que acesso a rota \'/api/v1/Cart/add-cart\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
 #line 15
-testRunner.And("quero criar um novo carrinho", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+testRunner.And("o id de usuario \'887101dc-1eb2-4e94-ac26-7915c3f718e8\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 16
-testRunner.When("executar o metodo post", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+testRunner.And("quero criar um novo carrinho", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 17
+testRunner.When("executar o metodo post", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+#line hidden
+#line 18
+testRunner.Then("o status code deve ser \'200\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Remover meu carrinho de compras")]
+        [NUnit.Framework.CategoryAttribute("DeleteCart")]
+        public virtual void RemoverMeuCarrinhoDeCompras()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "DeleteCart"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Remover meu carrinho de compras", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 21
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 22
+testRunner.Given("que acesso a rota \'/api/v1/Cart/remove-cart\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
+#line hidden
+#line 23
+testRunner.And("o id do carrinho é \'89\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+#line hidden
+#line 24
+testRunner.When("executar o metodo delete", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+#line hidden
+#line 25
 testRunner.Then("o status code deve ser \'200\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
             }

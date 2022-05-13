@@ -241,7 +241,7 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.Given("que estou autenticado no sistema", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
 #line 30
- testRunner.And("acesso produto com o id \'59\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+ testRunner.And("acesso produto com o id \'35\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 31
  testRunner.When("executo o metodo Delete na URL", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");

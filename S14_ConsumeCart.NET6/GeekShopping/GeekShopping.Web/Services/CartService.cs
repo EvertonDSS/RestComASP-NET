@@ -11,7 +11,7 @@ namespace GeekShopping.Web.Services {
         public CartService(HttpClient client) {
             _client = client ?? throw new ArgumentNullException(nameof(client));
         }
-
+    
         public async Task<CartViewModel> FindCartByUserId(string userId, string token) {
             _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
             var response = await _client.GetAsync($"{BasePath}/find-cart/{userId}");

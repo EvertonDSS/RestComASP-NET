@@ -106,7 +106,7 @@ this.ScenarioInitialize(scenarioInfo);
 testRunner.Given("que acesso a rota \'/api/v1/Cart/find-cart\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
 #line 7
-testRunner.And("o id de usuario \'887101dc-1eb2-4e94-ac26-7915c3f718e8\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+testRunner.And("o id de usuario \'7fb0fb35-0e49-4c81-b858-fdabd3d5f295\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 8
 testRunner.When("executar o metodo get", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
@@ -151,7 +151,7 @@ this.ScenarioInitialize(scenarioInfo);
 testRunner.Given("que acesso a rota \'/api/v1/Cart/add-cart\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
 #line 15
-testRunner.And("o id de usuario \'887101dc-1eb2-4e94-ac26-7915c3f718e8\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+testRunner.And("o id de usuario \'7fb0fb35-0e49-4c81-b858-fdabd3d5f295\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 16
 testRunner.And("quero criar um novo carrinho", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
@@ -199,7 +199,7 @@ this.ScenarioInitialize(scenarioInfo);
 testRunner.Given("que acesso a rota \'/api/v1/Cart/remove-cart\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
 #line 23
-testRunner.And("o id do carrinho é \'89\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+testRunner.And("o id do carrinho é \'10\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 24
 testRunner.When("executar o metodo delete", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");

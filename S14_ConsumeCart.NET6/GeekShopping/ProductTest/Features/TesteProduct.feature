@@ -27,7 +27,7 @@ Cenario: Adicionar um novo produto no sistema estando autenticado
 @DeleteProducts
 Cenario: Quero apagar um produto do sistema pelo id estando autenticado
 	Dado que estou autenticado no sistema
-	E acesso produto com o id '35'
+	E acesso produto com o id '25'
 	Quando executo o metodo Delete na URL
 	Entao o statusCode deve retornar OK
 

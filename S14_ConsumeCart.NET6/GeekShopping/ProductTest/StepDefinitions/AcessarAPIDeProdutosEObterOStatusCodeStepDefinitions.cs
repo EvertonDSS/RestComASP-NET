@@ -1,8 +1,7 @@
-using Duende.IdentityServer.Models;
 using GeekShopping.ProductAPI.Model;
-using Microsoft.AspNetCore.Http;
+using Newtonsoft.Json.Linq;
 using NUnit.Framework;
-using ProductTest.Service;
+using RestSharp;
 using System.Net;
 using System.Text;
 using System.Text.Json;
@@ -14,10 +13,6 @@ namespace ProductTest.StepDefinitions
     {
         private string url = "https://localhost:4440/api/v1/Product";
         private readonly ScenarioContext _scenarioContext;
-        public static class ControleInstancia
-        {
-            public static TokenService token;
-        }
 
         public AcessarAPIDeProdutosEObterOStatusCodeStepDefinitions(ScenarioContext scenarioContext)
         {
@@ -50,7 +45,19 @@ namespace ProductTest.StepDefinitions
         [Given(@"que estou autenticado no sistema")]
         public void GivenQueEstouAutenticadoNoSistema()
         {
+            var cliente = new RestClient("https://localhost:4435/");
+            var requeste = new RestRequest("connect/token", Method.Post);
+            requeste.AddHeader("content-type", "application/x-www-form-urlencoded");
+            requeste.AddParameter("client_id", "client");
+            requeste.AddParameter("client_secret", "my_super_secret");
+            requeste.AddParameter("grant_type", "client_credentials");
             
+            string response = cliente.ExecuteAsync(requeste).Result.Content;
+
+            var meuObjConvertido = JObject.Parse(response);
+            var token = meuObjConvertido.First.First.ToString();
+
+            _scenarioContext["token"] = token;
         }
 
         [Given(@"acesso produto com o id '([^']*)'")]
@@ -62,7 +69,7 @@ namespace ProductTest.StepDefinitions
         [When(@"adiciono o id na URL")]
         public void WhenAdicionoOIdNaURL()
         {
-            var token = _scenarioContext["Token"].ToString();
+            var token = _scenarioContext["token"].ToString();
             var id = _scenarioContext["Id"];
             var client = new HttpClient();
             url += $"/{id}";
@@ -93,7 +100,7 @@ namespace ProductTest.StepDefinitions
         public void WhenExecutoOMetodoPostNaURL()
         {
             var client = new HttpClient();
-            client.DefaultRequestHeaders.Add("Authorization", $"Bearer {_scenarioContext["Token"]}");
+            client.DefaultRequestHeaders.Add("Authorization", $"Bearer {_scenarioContext["token"]}");
             var product = (HttpContent?)_scenarioContext["Product"];
             var result = client.PostAsync(url, product);
 
@@ -103,7 +110,7 @@ namespace ProductTest.StepDefinitions
         [When(@"executo o metodo Delete na URL")]
         public void WhenExecutoOMetodoDeleteNaURL()
         {
-            var token = _scenarioContext["Token"].ToString();
+            var token = _scenarioContext["token"].ToString();
             var id = _scenarioContext["Id"];
             url += $"/{id}";
             var client = new HttpClient();
@@ -135,7 +142,7 @@ namespace ProductTest.StepDefinitions
         public void WhenExecutoOMetodoPutNaURL()
         {
             var client = new HttpClient();
-            client.DefaultRequestHeaders.Add("Authorization", $"Bearer {_scenarioContext["Token"]}");
+            client.DefaultRequestHeaders.Add("Authorization", $"Bearer {_scenarioContext["token"]}");
             var product = (HttpContent?)_scenarioContext["Product"];
             var result = client.PutAsync(url, product);
 

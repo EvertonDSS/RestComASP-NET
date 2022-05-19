@@ -1,25 +1,23 @@
+using Duende.IdentityServer.Models;
 using GeekShopping.ProductAPI.Model;
+using Microsoft.AspNetCore.Http;
 using NUnit.Framework;
-using System;
+using ProductTest.Service;
 using System.Net;
 using System.Text;
 using System.Text.Json;
-using TechTalk.SpecFlow;
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
-using RestSharp;
-using Newtonsoft.Json.Linq;
 
 namespace ProductTest.StepDefinitions
 {
     [Binding]
     public class AcessarAPIDeProdutosEObterOStatusCodeStepDefinitions
     {
-
         private string url = "https://localhost:4440/api/v1/Product";
-
         private readonly ScenarioContext _scenarioContext;
+        public static class ControleInstancia
+        {
+            public static TokenService token;
+        }
 
         public AcessarAPIDeProdutosEObterOStatusCodeStepDefinitions(ScenarioContext scenarioContext)
         {
@@ -52,20 +50,7 @@ namespace ProductTest.StepDefinitions
         [Given(@"que estou autenticado no sistema")]
         public void GivenQueEstouAutenticadoNoSistema()
         {
-            var cliente = new RestClient("https://localhost:4435/");
-            var requeste = new RestRequest("connect/token", Method.Post);
-            requeste.AddHeader("content-type", "application/x-www-form-urlencoded");
-            requeste.AddParameter("client_id", "cliente");
-            requeste.AddParameter("client_secret", "secret");
-            requeste.AddParameter("grant_type", "client_credentials");
-
-            string response = cliente.ExecuteAsync(requeste).Result.Content;
-
-            var meuObjConvertido = JObject.Parse(response);
-            var token = meuObjConvertido.First.First.ToString();
-
-            _scenarioContext["Token"] = token;
-
+            
         }
 
         [Given(@"acesso produto com o id '([^']*)'")]

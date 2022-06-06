@@ -1,5 +1,6 @@
 ﻿using GeekShopping.CartAPI.Data.ValueObjects;
 using GeekShopping.CartAPI.Model;
+using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 
 namespace GeekShopping.CartAPI.Messages;
 public class CheckoutHeaderVO
@@ -19,6 +20,7 @@ public class CheckoutHeaderVO
     public string CVV { get; set; }
     public string ExpiryMothYear { get; set; }
     public int CartTotalItems { get; set; }
+    [ValidateNever]
     public IEnumerable<CartDetailVO> CartDetails { get; set; }
         
 }

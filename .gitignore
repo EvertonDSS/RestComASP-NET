@@ -3,3 +3,24 @@
 ################################################################################
 
 /.vs/RestComAPS-NET/v17
+/S14_ConsumeCart.NET6/GeekShopping/GeekShopping.ProductAPI/obj/Debug/net6.0
+/S14_ConsumeCart.NET6/GeekShopping/GeekShopping.CouponAPI/obj/Release/net6.0
+/S14_ConsumeCart.NET6/GeekShopping/GeekShopping.CouponAPI/obj/Debug/net6.0
+/S14_ConsumeCart.NET6/GeekShopping/GeekShopping.CouponAPI/obj
+/S14_ConsumeCart.NET6/GeekShopping/GeekShopping.CouponAPI/bin/Debug/net6.0
+/S14_ConsumeCart.NET6/GeekShopping/GeekShopping.IdentityServer/bin/Debug/net6.0/keys
+/S14_ConsumeCart.NET6/GeekShopping/GeekShopping.IdentityServer
+/S11_AutenticacaoEOauth.NET6/GeekShopping/GeekShopping.IdentityServer/obj/Release/net6.0
+/S11_AutenticacaoEOauth.NET6/GeekShopping/GeekShopping.ProductAPI/obj/Release/net6.0
+/S11_AutenticacaoEOauth.NET6/GeekShopping/GeekShopping.Web/obj/Release/net6.0
+/S14_ConsumeCart.NET6/GeekShopping/.vs/GeekShopping/FileContentIndex
+/S14_ConsumeCart.NET6/GeekShopping/.vs/ProjectEvaluation
+/S14_ConsumeCart.NET6/GeekShopping/GeekShopping.CartAPI/obj/Debug/net6.0
+/S14_ConsumeCart.NET6/GeekShopping/GeekShopping.Web/obj/Debug/net6.0
+/S10_ConsumindoMicroserviceProduto.NET6/GeekShopping/GeekShopping.Web/obj/Release/net6.0
+/S10_ConsumindoMicroserviceProduto.NET6/GeekShopping/GeekShopping.ProductAPI/obj/Release/net6.0
+/S09_ConsumindoMicroserviceProduto.NET6/GeekShopping/GeekShopping.Web/obj/Debug/net6.0
+/S09_ConsumindoMicroserviceProduto.NET6/GeekShopping/GeekShopping.Web/obj/Release/net6.0
+/RestComASPNETUdemy/RestWithASPNETUdemy/obj/Release/net6.0
+/RestAPIASP/RestAPIASP/obj/Release/net6.0
+/.vs

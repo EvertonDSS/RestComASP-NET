@@ -1,12 +1,11 @@
 ﻿using GeekShopping.CartAPI.Data.ValueObjects;
 using GeekShopping.CartAPI.Model;
+using GeekShopping.MessageBus;
 using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 
 namespace GeekShopping.CartAPI.Messages;
-public class CheckoutHeaderVO
+public class CheckoutHeaderVO : BaseMessage
 {
-    
-    public long Id { get; set; }
     public string UserId { get; set; }
     public string? CouponCode { get; set; }
     public decimal PurchaseAmount { get; set; }

@@ -31,3 +31,6 @@
 /S14_ConsumeCart.NET6/GeekShopping/.idea/.idea.GeekShopping/.idea
 /S14_ConsumeCart.NET6/GeekShopping/GeekShopping.CartAPI/bin/Debug/net6.0
 /S14_ConsumeCart.NET6/GeekShopping/GeekShopping.MessageBus/obj/Debug/net6.0
+/S14_ConsumeCart.NET6/GeekShopping/.vs/GeekShopping
+/S14_ConsumeCart.NET6/GeekShopping/GeekShopping.CartAPI/obj
+/S14_ConsumeCart.NET6/GeekShopping/GeekShopping.MessageBus/bin/Debug/net6.0

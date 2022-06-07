@@ -25,3 +25,6 @@
 /RestAPIASP/RestAPIASP/obj/Release/net6.0
 /.vs
 /.suo
+/.dll
+/.exe
+/.pdb

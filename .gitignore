@@ -34,3 +34,9 @@
 /S14_ConsumeCart.NET6/GeekShopping/.vs/GeekShopping
 /S14_ConsumeCart.NET6/GeekShopping/GeekShopping.CartAPI/obj
 /S14_ConsumeCart.NET6/GeekShopping/GeekShopping.MessageBus/bin/Debug/net6.0
+/S14_ConsumeCart.NET6/GeekShopping/GeekShopping.MessageBus/obj
+/S14_ConsumeCart.NET6/GeekShopping/GeekShopping.ProductAPI/bin/Debug/net6.0
+/S14_ConsumeCart.NET6/GeekShopping/GeekShopping.ProductAPI/obj/GeekShopping.ProductAPI.csproj.nuget.dgspec.json
+/S14_ConsumeCart.NET6/GeekShopping/GeekShopping.ProductAPI/obj
+/S14_ConsumeCart.NET6/GeekShopping/GeekShopping.Web/bin/Debug/net6.0
+/S14_ConsumeCart.NET6/GeekShopping/GeekShopping.Web/obj

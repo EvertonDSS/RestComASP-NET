@@ -1,11 +1,10 @@
-﻿
-using GeekShopping.CartAPI.Messages;
-using GeekShopping.MessageBus;
+﻿using GeekShopping.MessageBus;
+using GeekShopping.OrderAPI.Messages;
 using RabbitMQ.Client;
 using System.Text;
 using System.Text.Json;
 
-namespace GeekShopping.CartAPI.RabbitMQSender
+namespace GeekShopping.OrderAPI.RabbitMQSender
 {
     public class RabbitMQMessageSender : IRabbitMQMessageSender
     {
@@ -23,13 +22,19 @@ namespace GeekShopping.CartAPI.RabbitMQSender
 
         public void SendMessage(BaseMessage message, string queueName)
         {
-            if(ConnectionExists())
+            var factory = new ConnectionFactory
             {
-                using var channel = _connection.CreateModel();
-                channel.QueueDeclare(queue: queueName, false, false, false, arguments: null);
-                byte[] body = GetMessageAsByteArray(message);
-                channel.BasicPublish(exchange: "", routingKey: queueName, basicProperties: null, body: body);
-            }
+                HostName = _hostName,
+                UserName = _username,
+                Password = _password,
+            };
+            _connection = factory.CreateConnection();
+
+            using var channel = _connection.CreateModel();
+            channel.QueueDeclare(queue: queueName, false, false, false, arguments: null);
+            byte[] body = GetMessageAsByteArray(message);
+            channel.BasicPublish(exchange: "", routingKey: queueName, basicProperties: null, body: body);
+            
         }
 
         private byte[] GetMessageAsByteArray(object message)
@@ -38,7 +43,7 @@ namespace GeekShopping.CartAPI.RabbitMQSender
             {
                 WriteIndented = true,
             };
-            var json = JsonSerializer.Serialize<CheckoutHeaderVO>((CheckoutHeaderVO)message, options);
+            var json = JsonSerializer.Serialize<PaymentVO>((PaymentVO)message, options);
             var body = Encoding.UTF8.GetBytes(json);
             return body;
 
@@ -48,13 +53,6 @@ namespace GeekShopping.CartAPI.RabbitMQSender
         {
             try
             {
-                var factory = new ConnectionFactory
-                {
-                    HostName = _hostName,
-                    UserName = _username,
-                    Password = _password,
-                };
-                _connection = factory.CreateConnection();
 
             }
             catch (Exception)
@@ -68,7 +66,7 @@ namespace GeekShopping.CartAPI.RabbitMQSender
             if (_connection != null) return true;
             CreateConnection();
             return _connection != null;
-
+           
         }
 
     }

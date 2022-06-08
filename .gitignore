@@ -48,3 +48,5 @@
 *.targets
 *.props
 /S14_ConsumeCart.NET6/GeekShopping/GeekShopping.OrderAPI/obj
+/S14_ConsumeCart.NET6/GeekShopping/GeekShopping.PaymentProcessor/obj/Debug/net6.0
+/S14_ConsumeCart.NET6/GeekShopping/GeekShopping.PaymentProcessor/obj

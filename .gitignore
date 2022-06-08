@@ -40,3 +40,11 @@
 /S14_ConsumeCart.NET6/GeekShopping/GeekShopping.ProductAPI/obj
 /S14_ConsumeCart.NET6/GeekShopping/GeekShopping.Web/bin/Debug/net6.0
 /S14_ConsumeCart.NET6/GeekShopping/GeekShopping.Web/obj
+*.iml
+/S14_ConsumeCart.NET6/GeekShopping/.idea
+/S14_ConsumeCart.NET6/GeekShopping/.vs
+/S14_ConsumeCart.NET6/GeekShopping/GeekShopping.OrderAPI/bin/Debug/net6.0
+/S14_ConsumeCart.NET6/GeekShopping/GeekShopping.OrderAPI/obj/Debug/net6.0
+*.targets
+*.props
+/S14_ConsumeCart.NET6/GeekShopping/GeekShopping.OrderAPI/obj

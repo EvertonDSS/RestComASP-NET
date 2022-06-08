@@ -17,10 +17,6 @@ builder.Services.AddDbContext<MySQLContext>(options => options
             new Version(10, 4, 22)
     )));
 
-//IMapper mapper = MappingConfig.RegisterMaps().CreateMapper();
-//builder.Services.AddSingleton(mapper);
-//builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
-
 var dbContext = new DbContextOptionsBuilder<MySQLContext>();
 dbContext.UseMySql(connection, new MySqlServerVersion(
             new Version(10, 4, 22)));
@@ -28,6 +24,8 @@ dbContext.UseMySql(connection, new MySqlServerVersion(
 builder.Services.AddSingleton(new OrderRepository(dbContext.Options));
 
 builder.Services.AddHostedService<RabbitMQCheckoutConsumer>();
+
+builder.Services.AddHostedService<RabbitMQPaymentConsumer>();
 
 builder.Services.AddSingleton<IRabbitMQMessageSender, RabbitMQMessageSender>();
 

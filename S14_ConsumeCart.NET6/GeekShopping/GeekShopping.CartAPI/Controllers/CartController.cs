@@ -88,6 +88,8 @@ namespace GeekShopping.CartAPI.Controllers
             //RabbitMQ Logic aqui
             _rabbitMQMessageSender.SendMessage(vo, "checkoutqueue");
 
+            await _cartRepository.ClearCart(vo.UserId);
+
             return Ok(vo);
         }
         

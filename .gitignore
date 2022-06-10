@@ -53,3 +53,9 @@
 /S14_ConsumeCart.NET6/GeekShopping/GeekShopping.PaymentAPI/obj
 /S14_ConsumeCart.NET6/GeekShopping/GeekShopping.PaymentAPI/bin/Debug/net6.0
 /S14_ConsumeCart.NET6/GeekShopping/GeekShopping.PaymentProcessor/bin/Debug/net6.0
+/S14_ConsumeCart.NET6/GeekShopping/GeekShopping.APIGateway/obj
+/S14_ConsumeCart.NET6/GeekShopping/GeekShopping.APIGateway/bin/Debug/net6.0
+/S14_ConsumeCart.NET6/GeekShopping/GeekShopping.Email/bin/Debug/net6.0
+*.dll
+/S14_ConsumeCart.NET6/GeekShopping/GeekShopping.Email/obj/Debug/net6.0
+/S14_ConsumeCart.NET6/GeekShopping/GeekShopping.Email/obj
